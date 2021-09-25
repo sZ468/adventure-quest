@@ -1,0 +1,134 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+@-webkit-keyframes color-change {
+    0% {
+        color: orange;
+    }
+    50% {
+        color: red;
+    }
+    100% {
+        color: orange;
+    }
+}
+
+@-moz-keyframes color-change {
+    0% {
+        color: orange;
+    }
+    50% {
+        color: red;
+    }
+    100% {
+        color: orange;
+    }
+}
+
+@-ms-keyframes color-change {
+    0% {
+        color: orange;
+    }
+    50% {
+        color: red;
+    }
+    100% {
+        color: orange;
+    }
+}
+
+@-o-keyframes color-change {
+    0% {
+        color: orange;
+    }
+    50% {
+        color: red;
+    }
+    100% {
+        color: orange;
+    }
+}
+
+@keyframes color-change {
+    0% {
+        color: orange;
+    }
+    50% {
+        color: red;
+    }
+    100% {
+        color: orange;
+    }
+}
+
+#game-time {
+    position: absolute;
+    right: 1;
+    bottom: 0;
+    -webkit-animation: color-change 1s infinite;
+    -moz-animation: color-change 1s infinite;
+    -o-animation: color-change 1s infinite;
+    -ms-animation: color-change 1s infinite;
+    animation: color-change 1s infinite;
+    font-size: 32px;
+}
+
+#user-stats {
+    display: none;
+    width: 225px;
+    height: 310px;
+}
+
+#weapon-list {
+    display: none;
+    -webkit-animation: color-change 1s infinite;
+    -moz-animation: color-change 1s infinite;
+    -o-animation: color-change 1s infinite;
+    -ms-animation: color-change 1s infinite;
+    animation: color-change 1s infinite;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+
+#footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 24px;
+    -webkit-animation: color-change 1s infinite;
+    -moz-animation: color-change 1s infinite;
+    -o-animation: color-change 1s infinite;
+    -ms-animation: color-change 1s infinite;
+    animation: color-change 1s infinite;
+}
+
+#places {
+    display: none;
+    width: 160px;
+    height: 140px;
+}
+
+#adventure {
+    display: none;
+    width: 160px;
+    height: 80px;
+}
+
+#tutorial {
+    display: none;
+    width: 600px;
+    height: 200px;
+}
+
+#credits {
+    display: none;
+}

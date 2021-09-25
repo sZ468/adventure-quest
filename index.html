@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title id="title">
+    </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: url("img/castle-wall.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: black;
+            background-position: center;
+        }
+    </style>
+    <div id="game-time"></div>
+
+    <nav id="buttons">
+        <button onClick="showMenu(userStats)">Stats</button>
+        <button onClick="showMenu(places)">Town</button>
+        <button onClick="showMenu(quests)">Adventure</button>
+        <button onClick="showMenu(tutorial)">Tutorial</button>
+        <button onClick="showMenu(credits)">Credits</button>
+
+        <button id="cheat" onClick="cheatCode()">Cheat</button>
+    </nav>
+
+
+    <div id="user-stats">
+        <ul id="name"></ul>
+        <ul id="job"></ul>
+        <ul id="income"></ul>
+        <ul id="level"></ul>
+        <ul id="health"></ul>
+        <ul id="damage"></ul>
+        <ul id="attack-speed"></ul>
+        <ul id="weapon"></ul>
+    </div>
+
+
+    <div id="places">
+        <ul id="hospital"><button onClick="hospital()">Hospital</button></ul>
+        <ul id="blacksmith"><button onClick="showMenu(weaponsList)">Blacksmith</button></ul>
+        <ul id="barracks"><button onClick="barracks()">Barracks</button></ul>
+    </div>
+
+
+    <div>
+        <ul id="weapon-list">
+            <ol><button onClick="buyWeapon(broadSword)">Broadsword</button></ol>
+            <ol><button onClick="buyWeapon(greatSword)">Greatsword</button></ol>
+            <ol><button onClick="buyWeapon(bastardSword)">Bastard Sword</button></ol>
+            <ol><button onClick="buyWeapon(gloriousSword)">Glorious Sword</button></ol>
+            <ol><button onClick="buyWeapon(emeraldSword)">Emerald Sword</button></ol>
+            <ol><button onClick="buyWeapon(divineSword)">Divine Sword</button></ol>
+            <ol><button onClick="buyWeapon(etherealSword)">Ethereal Sword</button></ol>
+        </ul>
+    </div>
+
+    <div id="adventure">
+        <ul id="battle"><button onClick="startBattle(chooseAnEnemy())">Battle</button></ul>
+        <ul id="practice"><button onClick="startPractice()">Practice</button></ul>
+    </div>
+
+    <div id="tutorial">
+        <h3>You are an apprentice, fighting through hordes of undeads.
+            <br>Clawing your way through the darkness.
+            <br>Prove your worthiness and visit the barracks for a job.
+            <br>Can you do it?
+            <br>Buy weapons, practice and fight enemies to level up, good luck...
+        </h3>
+    </div>
+
+    <div id="credits">
+        <h3>Credits from Robo Rick - @TechWarriorz at YouTube for Game Time Code.</h3>
+    </div>
+
+
+</body>
+
+<footer id="footer">Created by Daniel Gomes &copy;</footer>
+
+<script src="js/gameTime.js"></script>
+<script src="js/display.js"></script>
+<script src="js/player.js"></script>
+<script src="js/item.js"></script>
+<script src="js/town.js"></script>
+<script src="js/battle.js"></script>
+
+</html> 
